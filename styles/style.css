@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+section{
+    margin-bottom: 100px;
+    
+}
+
+
+/*-----------------------
+
+  FIRST SECTION 
+
+-------------------------*/
+
+
+.top-banner{
+    background-color: #161616 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1321px;
+    border-radius: 20px;
+    grid-gap: 100px;
+    margin-top: 50px;
+
+}
+
+.title-text{
+    padding: 0 106px;
+
+}
+.title-text a:hover{
+    background-color:blue;
+}
+.title-text h1{
+    color: #FFFFFF;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.title-text p{
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.title-text a{
+    background-color:#DD0000
+    ;
+    padding: 16px;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.player{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.player img{
+    width: 80%;
+    display: block;
+}
+
+
+
+
+
+/*-----------------------
+
+  SECOND SECTION 
+
+-------------------------*/
+
+
+
+
+
+.second-section{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 24px;
+    max-width: 1321px;
+}
+.menu{
+    Width: 312px;
+    height: 312px;
+    background-color: #161616;
+    border-radius: 10px;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu-button a:visited {
+    color: #161616;
+    text-decoration: none;
+  }
+.menu .menu-button{
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#menu-button-blog{
+    background-color: #DD0000;
+}
+.transfers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    
+}
+.blog img{
+    width: 100%;
+    display: block;
+    
+}
+.blog a{
+    text-decoration: none;
+    color: #161616;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.blog{
+    border: 1px solid gray;
+    border-radius: 10px;
+
+}
+.blog .blog-text{
+    padding: 20px;
+}
+.blog-text span{
+    padding: 5px;
+}
+.view-all{
+    display: none;
+}
+
+/*-----------------------
+
+  FOOTER SECTION
+
+-------------------------*/
+
+
+footer{
+    background-color: #161616;
+    text-align: center;
+    margin: 0%;
+    padding: 80px 20px;
+    
+}
+
+footer h1 {
+    color: whitesmoke;
+}
+
+.information ul{
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+}
+
+footer hr{
+    margin: 80px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social ul{
+    display: flex;
+    list-style:none;
+    color: #FFFFFF; 
+}
+.social li{
+    padding: 20px;
+}
+
+.fa-brands{
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+/*-----------------------
+
+  MEDIA QUERY BIG DEVICES
+
+-------------------------*/
+
+@media screen and (min-width:1025px) and (max-width:1235px) {
+
+   
+    .title-text{
+        text-align: center;
+        padding: 40px;
+    }
+    .title-text h1{
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+    
+    .title-text p{
+       
+        font-size: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .title-text a{
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+
+}
+
+
+/*-----------------------
+
+  MEDIA QUERY TAB
+
+-------------------------*/
+
+
+@media screen and (min-width:668px) and (max-width:1024px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    section{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .top-banner{
+        background-color: #161616 ;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 10px;
+        align-items: center; 
+    
+    }
+    .title-text{
+        text-align: center;
+        padding: 20px;
+    }
+    .title-text h1{
+        color: #FFFFFF;
+        font-size: 1.3em;
+        margin-bottom: 0;
+    }
+    
+    .title-text p{
+        color: #FFFFFF;
+        font-size: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .title-text a{
+        background-color:#DD0000
+        ;
+        padding: 10px;
+        border-radius: 5px;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    
+    .player{
+        margin: 0  30px;
+        margin-bottom: 0px;
+    }
+    .player img{
+        width: 100%;
+        display: block;
+    }
+    .second-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+        width: auto;
+        align-items: center;
+        font-size: small;
+        background-color: transparent;
+    }
+    .menu-button{
+        
+        border: 1px solid gray;
+        border-radius:  10px;
+    }
+
+
+    .transfers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #last-blog{
+        display: none;
+    }
+
+    .view-all{
+        display:inline;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .view-all-button{
+        background-color:#DD0000
+        ;
+        color: whitesmoke;
+        margin: 0 300px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        
+    }
+
+    .information ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 100px;
+    }
+    .information li{
+        padding: 5px;
+    }
+
+}
+
+
+/*-----------------------
+
+  MEDIA QUERY MOBILE
+
+-------------------------*/
+
+
+@media screen and (max-width:740px) {
+    section{
+        padding: 10px;
+    }
+    .top-banner{
+        background-color: #161616 ;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        align-items: center;
+    
+    }
+    .title-text{
+        text-align: center;
+        padding: 10px;
+    }
+    .title-text h1{
+        color: #FFFFFF;
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+    
+    .title-text p{
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    
+    .title-text a{
+        background-color:#DD0000
+        ;
+        padding: 16px;
+        border-radius: 5px;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    
+    .player{
+        margin: 0  30px;
+        margin-bottom: 0px;
+    }
+    .player img{
+        width: 100%;
+     
+    }
+    .second-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu{
+        Width: 312px;
+        height: 312px;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    .menu-button{
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        padding: 20px;
+        border: 1px solid gray;
+        border-radius:  10px;
+    }
+    .transfers{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .information ul{
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+    }
+    .information li{
+        margin-bottom: 20px;
+    }
+
+}
